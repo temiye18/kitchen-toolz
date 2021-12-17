@@ -1,0 +1,319 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-text-color: #6c6a6a;
+  --dark-bg-color: #303030;
+  --button-color: #ae0a22;
+}
+
+* {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Eczar", serif;
+  color: var(--dark-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header {
+  background-color: var(--dark-bg-color);
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.top-header__text {
+  font-size: 1.375rem;
+}
+
+/* NAV SECTION MENU LIST */
+.nav-section {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--dark-text-color);
+}
+
+.nav-section__menu {
+  margin-left: auto;
+}
+.nav-section__menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-section__menu-list li a {
+  font-size: 1.125rem;
+  color: #000;
+}
+
+.nav-section__menu-list li:last-child {
+  margin-left: 6rem;
+}
+.nav-section__menu-list li:last-child a {
+  display: inline-block;
+  background: var(--button-color);
+  border-radius: 2px;
+  color: #fff;
+  padding: 0.5em 3em;
+  font-size: 1.25rem;
+}
+
+.nav-section__menu-item {
+  margin-left: 2rem;
+}
+
+/* SHOWCASE SECTION */
+
+.showcase-row {
+  place-items: center;
+}
+.showcase-cooking-img {
+  width: 40%;
+}
+.showcase-cooking-img img {
+  width: 100%;
+}
+.showcase-cooking {
+  width: 50%;
+}
+
+h1.showcase-header {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 4rem;
+}
+
+p.showcase-text {
+  font-size: 1.375rem;
+  /* margin-top: 0.5em; */
+  line-height: 1.5;
+  color: var(--dark-text-color);
+}
+
+.showcase-link__container {
+  margin-top: 1.7em;
+}
+.showcase-link {
+  display: inline-block;
+  background: var(--button-color);
+  border-radius: 2px;
+  color: #fff;
+  padding: 0.5em 3em;
+  font-size: 1.25rem;
+}
+
+/* DISCOUNT SECTION */
+.discount-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10em 0;
+}
+
+p.discount-text {
+  text-align: center;
+  color: #000;
+  font-size: 1.75rem;
+}
+
+span.discount-price {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* PRODUCT SECTION */
+.product-row {
+  justify-content: center;
+  align-items: center;
+  /* place-items: center; */
+}
+/* .product-img-container {
+   width: 50%; 
+} */
+.product-description {
+  width: 45%;
+  margin-left: 5em;
+}
+h1.product-header {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+p.product-text {
+  margin: 1.5rem 0;
+  font-size: 1.375rem;
+  line-height: 1.5;
+  color: var(--dark-text-color);
+}
+
+/* FEATURE SECTION */
+
+.feature-section {
+  padding: 8rem 0;
+}
+
+.feature-header {
+  margin-left: 2em;
+  font-size: 1.8rem;
+}
+
+ul.feature-list {
+  list-style-type: inherit;
+}
+
+li.feature-list-item {
+  margin: 1rem 0;
+  font-size: 1.375rem;
+  color: var(--dark-text-color);
+}
+.feature-description {
+  width: 60%;
+}
+.feature-img-container {
+  width: 40%;
+  margin-left: 3em;
+}
+
+/* HOW  TO SECTION */
+
+.howto-description {
+  margin-left: 3em;
+}
+
+/* BUY NOW SECTION */
+.buy-now {
+  padding: 8rem 0;
+}
+
+.buy-now-row {
+  justify-content: space-around;
+}
+
+.buy-now-box {
+  text-align: center;
+}
+.buy-now-price {
+  line-height: 1.3;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.buy-now-price span {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.buy-now-link {
+  margin-top: 2em;
+}
+.buy-now-link a {
+  display: inline-block;
+  background: var(--button-color);
+  border-radius: 2px;
+  color: #fff;
+  padding: 0.5em 4em;
+  font-size: 1.25rem;
+}
+
+.price-box {
+  margin-right: 2em;
+}
+
+/*  Horizontal */
+
+.horiz-line {
+  max-width: 100%;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+/* PROMO SECTION */
+.promo-section {
+  padding: 5rem 0;
+}
+
+.promo-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2.7em;
+}
+.promo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-header {
+  text-align: center;
+}
+
+.promo-footer-text {
+  text-align: center;
+  font-size: 2.125rem;
+  font-weight: 600;
+  margin-top: 3em;
+}
+
+.promo-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.contact-section {
+  padding: 6rem 0;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  width: 80%;
+}
+.contact-text,
+.delivery-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.delivery-text {
+  font-weight: 400;
+}
